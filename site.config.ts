@@ -2,24 +2,24 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '7875426197cf461698809def95960ebf',
+  rootNotionPageId: 'acd036d84d574ddfbdb3514ca25eb33b',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+  name: 'SiteAI blog',
+  domain: 'siteai.blog',
+  author: 'Siom C',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'AI sharing website: A platform for exchanging knowledge and ideas',
 
   // social usernames (optional)
-  twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
-  linkedin: 'fisch2',
+  twitter: 'siom_c',
+  //github: 'transitive-bullshit',
+  //linkedin: 'fisch2',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
@@ -51,15 +51,15 @@ export default siteConfig({
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
   navigationStyle: 'default'
-  // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
-  // ]
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: 'About',
+      pageId: '40cf5e1370bf429fb64a2542aa8d1350'
+    },
+    {
+      title: 'Contact',
+      pageId: '6c936a7bd52e43b088edfb396920dfe1'
+    }
+  ]
 })
